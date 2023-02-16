@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="style.css">
+        <script src="app.js" defer></script>
+        <script src="swiper-no-swiper/swiper-bundle.min.js"></script>
+        <!-- unicons is a good resource too -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link rel="stylesheet" href="swiper-no-swiper/swiper-bundle.min.css">
+        <title>Hacker's Portfolio Website</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav-logo">Dling</a>
+
+                <div class="nav-menu " id="nav-menu">
+                    <ul class="nav-list grid">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link active-link">
+                                <i class="uil uil-estate nav-icon"></i>Home</a>
+                            
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link"><i class="uil uil-user-circle nav-icon"></i> About</a>
+                           
+                        </li>
+                        <li class="nav-item">
+                            <a href="#Skills" class="nav-link"><i class="uil uil-file-edit-alt nav-icon"></i>Skills</a>
+                            
+                        </li>
+                        <li class="nav-item">
+                            <a href="#services" class="nav-link"><i class="uil uil-briefcase-alt nav-icon"></i>Services</a>
+                            
+                        </li>
+                        <li class="nav-item">
+                            <a href="#portfolio" class="nav-link"><i class="uil uil-scenery nav-icon"></i>Portfolio</a>
+                            
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link"><i class="uil uil-message nav-icon"></i>Contact</a>
+                            
+                        </li>
+                    </ul>
+                    <i class="uil uil-times-circle nav-close" onclick="closeThis()" id="nav-closeId"></i>
+                </div>
+                <div class="nav-btns">
+
+                     <!--==================== Theme Change Button ====================-->
+                     <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                    <div class="nav-toggle" onclick="openThis()" id="nav-toggleId">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                    <div class="home-container container grid">
+                        <div class="home-content grid">
+                            <div class="home-social">
+                                <a href="https://www.facebook.com/rowelljay.rodriguez" target="_blank" class="home-social-icon">
+                                    <i class="uil uil-link"></i>
+                                </a>
+                                <a href="https://hackertyper.net/" target="_blank" class="home-social-icon">
+                                    <i class="uil uil-laptop"></i>
+                                </a>
+                                <a href="https://github.com/"  target="_blank" class="home-social-icon">
+                                    <i class="uil uil-github"></i>
+                                </a>
+                            </div>
+
+                            <div class="home-img">
+                                <svg class="home-blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <mask id="mask0" mask-type="alpha">
+                                        <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                        130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                        97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                        0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                    </mask>
+                                    <g mask="url(#mask0)">
+                                        <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                        165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                        129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                        -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                        <image class="home-blob-img" x="-81" y="-14" href="img/edited.png">
+                                            <!-- To review x & y can use to move cordinates- y is bottom-up & x is left & right -->
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="home-data">
+                                <h1 class="home-title">Hi, Honored Meeting You</h1>
+                                <h3 class="home-subtitle">Professional Haker</h3>
+                                <p class="home-description">
+                                    Wake up to reality! Nothing ever goes as planned in this world. The longer you live, the more you realize that, in this reality, only pain, suffering, and futility exist.
+                                    <div>
+                                        <a href="#contact" class="button button-flex">
+                                            Contact Us<i class="uil uil-message button-icon"></i>
+                                        </a>
+                                    </div>
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="home-scroll">
+                            <a href="#about" class="home-scroll-button button-flex">
+                                <i class="uil uil-mouse home-scroll-mouse"></i>
+                                <span class="home-scroll-name home-scroll-arrow">Scroll Down</span>
+                                <i class="uil uil-arrow-down home-scroll-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">My introduction</p>
+
+                <div class="about-container container grid">
+                    <img src="img/about.jpg" alt="haker" class="about-img">
+                    <div class="about-data">
+                        <p class="about-description">The most painful thing is losing yourself in the process of loving someone too much, and forgetting that you are special too.</p>
+
+                        <div class="about-info">
+                            <div>
+                                <span class="about-info-title">18+</span>
+                                <span class="about-info-name">Year <br> experience</span>
+                            </div>
+                            <div>
+                                <span class="about-info-title">200+</span>
+                                <span class="about-info-name">Hacking <br> Tools</span>
+                            </div>
+                            <div>
+                                <span class="about-info-title">69+</span>
+                                <span class="about-info-name">Companies <br> hacked</span>
+                            </div>
+                        </div>
+                        <div class="about-buttons" id="aboutButton">
+                            <a href="img/laugh.gif" target="_blank" class="button button-flex" id="download-me">Download Me <i class="uil uil-download-alt" id="downloaMe"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="Skills">
+                <h2 class="section-title">Skills</h2>
+                <p class="section-subtitle">My technical Level</p>
+
+                <div class="skills-container container-grid">
+                    <div>
+                    <div class="skills-content skills-open">
+                        <div class="skills-header">
+                            <i class="uil uil-brackets-curly skills-icon"></i>
+                                <div>
+                                    <h1 class="skills-titles">Haker Person</h1>
+                                    <span class="skills-subtitle">More than 18 Years 
+                                    </span>
+                                </div>
+                                <i class="uil uil-angle-down skills-arrow"></i>
+                            </div>
+
+                            <div class="skills-list grid">
+                                <div class="skills-data">
+                                    <div class="skills-titles">
+                                        <h3 class="skills-name">HTML</h3>
+                                        <span class="skills-number">90%</span>
+                                    </div>
+                                    <div class="skills-bar">
+                                        <span class="skills-percentage skills-html">
+                                            
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="skills-data">
+                                    <div class="skills-titles">
+                                        <h3 class="skills-name">CSS</h3>
+                                        <span class="skills-number">80%</span>
+                                    </div>
+                                    <div class="skills-bar">
+                                        <span class="skills-percentage skills-css">
+
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="skills-data">
+                                    <div class="skills-titles">
+                                        <h3 class="skills-name">JavaScript</h3>
+                                        <span class="skills-number">50%</span>
+                                    </div>
+                                    <div class="skills-bar">
+                                        <span class="skills-percentage skills-js">
+
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="skills-data">
+                                    <div class="skills-titles">
+                                        <h3 class="skills-name">React</h3>
+                                        <span class="skills-number">85%</span>
+                                    </div>
+                                    <div class="skills-bar">
+                                        <span class="skills-percentage skills-react">
+
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                        <!-- =============> Skills2 <=============== -->
+                    <div class="skills-content skills-close">
+                        <div class="skills-header">
+                            <i class="uil uil-server-network-alt skills-icon"></i>
+                                <div>
+                                    <h1 class="skills-titles">Backend Developer</h1>
+                                    <span class="skills-subtitle">More than 5 Years 
+                                    </span>
+                                </div>
+                                <i class="uil uil-angle-down skills-arrow"></i>
+                            </div>
+
+                            <div class="skills-list grid">
+                                <div class="skills-data">
+                                    <div class="skills-titles">
+                                        <h3 class="skills-name">PHP</h3>
+                                        <span class="skills-number">90%</span>
+                                    </div>
+                                    <div class="skills-bar">
+                                        <span class="skills-percentage skills-html">
+                                            
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="skills-data">
+                                    <div class="skills-titles">
+                                        <h3 class="skills-name">CSS</h3>
+                                        <span class="skills-number">80%</span>
+                                    </div>
+                                    <div class="skills-bar">
+                                        <span class="skills-percentage skills-css">
+
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="skills-data">
+                                    <div class="skills-titles">
+                                        <h3 class="skills-name">Node Js</h3>
+                                        <span class="skills-number">50%</span>
+                                    </div>
+                                    <div class="skills-bar">
+                                        <span class="skills-percentage skills-js">
+
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="skills-data">
+                                    <div class="skills-titles">
+                                        <h3 class="skills-name">React</h3>
+                                        <span class="skills-number">85%</span>
+                                    </div>
+                                    <div class="skills-bar">
+                                        <span class="skills-percentage skills-react">
+
+                                        </span>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                        <!-- =============> skills3 <=============== -->
+                    <div class="skills-content skills-close">
+                        <div class="skills-header">
+                            <i class="uil uil-swatchbook skills-icon"></i>
+                                <div>
+                                    <h1 class="skills-titles">Designer</h1>
+                                    <span class="skills-subtitle">More than 5 Years 
+                                    </span>
+                                </div>
+                                <i class="uil uil-angle-down skills-arrow"></i>
+                            </div>
+
+                            <div class="skills-list grid">
+                                <div class="skills-data">
+                                    <div class="skills-titles">
+                                        <h3 class="skills-name">Figma</h3>
+                                        <span class="skills-number">90%</span>
+                                    </div>
+                                    <div class="skills-bar">
+                                        <span class="skills-percentage skills-html">
+                                            
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="skills-data">
+                                    <div class="skills-titles">
+                                        <h3 class="skills-name">CSS</h3>
+                                        <span class="skills-number">80%</span>
+                                    </div>
+                                    <div class="skills-bar">
+                                        <span class="skills-percentage skills-css">
+
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="skills-data">
+                                    <div class="skills-titles">
+                                        <h3 class="skills-name">Node Js</h3>
+                                        <span class="skills-number">50%</span>
+                                    </div>
+                                    <div class="skills-bar">
+                                        <span class="skills-percentage skills-js">
+
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="skills-data">
+                                    <div class="skills-titles">
+                                        <h3 class="skills-name">React</h3>
+                                        <span class="skills-number">85%</span>
+                                    </div>
+                                    <div class="skills-bar">
+                                        <span class="skills-percentage skills-react">
+
+                                        </span>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    </div>
+            </section>
+
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section"> 
+                <h2 class="section-title">Qualification</h2>
+                <p class="section-subtitle">My persoal journey</p>
+                    
+                <div class="qualification-container container">
+                    
+                    <div class="qualification-tabs">
+                        <div class="qualification-button button-flex tab-links qualification-active" onclick="openTab('education')">
+                            <i class="uil uil-graduation-cap qualification-icon"></i>
+                            Education
+                        </div>
+
+                        <div class="qualification-button button-flex tab-links" onclick="openTab('work')">
+                            <i class="uil uil-briefcase-alt qualification-icon"></i>
+                            Work
+                        </div>
+                    </div>
+                    <!-- <div class="qualification-tabs"> //////==========> DONT USE THIS CODE <========////// I fix it my own =_=
+                        <div class="qualification-button button-flex qualification-active" onclick="openTab('education')" data-target='#education'>
+                            <i class="uil uil-graduation-cap qualification-icon"></i>
+                            Education
+                        </div>
+                        <div class="qualification-button button-flex qualification-active" onclick="openTab('work')" data-target="#work">
+                            <i class="uil uil-briefcase-alt qualification-icon"></i>
+                            Work
+                        </div>
+                    </div> -->
+
+                    <div class="qualification-sections">
+                        <!-- ==========> Qualfiication Content => Education <=========== -->
+                        <div class="qualification-content active-tab" data-content id='education'>
+                            <!-- =======>qualification 1 <========= -->
+                            <div class="qualification-data">
+                                <div>
+                                    <h3 class="qualification-title">Bachelor Of Science Technology</h3>
+                                    <span class="qualification-subtitle">Philippines</span>
+                                    <div class="qualification-calendar">
+                                        <i class="uil uil-schedule"></i>
+                                        2018 - 2023
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification-rounder"></span>
+                                    <span class="qualification-line"></span>
+                                </div>
+                            </div>
+
+                            <!-- =======>qualification 2 <========= -->
+                            <div class="qualification-data">
+                                <div></div>
+                                <div>
+                                    <span class="qualification-rounder"></span>
+                                    <span class="qualification-line"></span>
+                                </div>
+                                
+                                <div>
+                                    <h3 class="qualification-title">Graphic Design</h3>
+                                    <span class="qualification-subtitle">Haker Ko   </span>
+                                    <div class="qualification-calendar">
+                                        <i class="uil uil-schedule"></i>
+                                        2020 - 2023
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- =======>qualification 3 <========= -->
+                            <div class="qualification-data">
+                                <div>
+                                    <h3 class="qualification-title">Web  Development</h3>
+                                    <span class="qualification-subtitle">Japan City</span>
+                                    <div class="qualification-calendar">
+                                        <i class="uil uil-schedule"></i>
+                                        2020 - 2023
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification-rounder"></span>
+                                    <span class="qualification-line"></span>
+                                </div>
+                            </div>
+                            <!-- =======>qualification 4 <========= -->
+                            <div class="qualification-data">
+                                <div></div>
+                                <div>
+                                    <span class="qualification-rounder"></span>
+                                    <!-- <span class="qualification-line"></span> -->
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification-title">Master in hacking</h3>
+                                    <span class="qualification-subtitle">Kidapawan</span>
+                                    <div class="qualification-calendar">
+                                        <i class="uil uil-schedule"></i>
+                                        2020 - 2023
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        
+                        <!-- ==========> Qualfiication Content2 => Work <=========== -->
+                        <div class="qualification-content" data-content id='work'>
+                            <!-- =======>qualification 1 <========= -->
+                            <div class="qualification-data">
+                                <div>
+                                    <h3 class="qualification-title">Front-End Hacker</h3>
+                                    <span class="qualification-subtitle">Landbank</span>
+                                    <div class="qualification-calendar">
+                                        <i class="uil uil-schedule"></i>
+                                        2016 - 2024
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification-rounder"></span>
+                                    <span class="qualification-line"></span>
+                                </div>
+                            </div>
+
+                            <!-- =======>qualification 2 <========= -->
+                            <div class="qualification-data">
+                                <div></div>
+                                <div>
+                                    <span class="qualification-rounder"></span>
+                                    <span class="qualification-line"></span>
+                                </div>
+                                
+                                <div>
+                                    <h3 class="qualification-title">Master Design</h3>
+                                    <span class="qualification-subtitle"> Photoshop ra bitaw</span>
+                                    <div class="qualification-calendar">
+                                        <i class="uil uil-schedule"></i>
+                                        2020 - 2023
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- =======>qualification 3 <========= -->
+                            <div class="qualification-data">
+                                <div>
+                                    <h3 class="qualification-title">React Development</h3>
+                                    <span class="qualification-subtitle">Makilala</span>
+                                    <div class="qualification-calendar">
+                                        <i class="uil uil-schedule"></i>
+                                        2018 - 2023
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification-rounder"></span>
+                                    <!-- <span class="qualification-line"></span> -->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SERVICES ====================-->
+            <section class="services section" id="services">
+                <h2 class="section-title">Services</h2>
+                <p class="section-subtitle">What I Offer</p>
+
+                <div class="services-container container grid">
+                 <!--==================== SERVICES1 ====================-->
+                 <div class="services-content">
+                    <div>
+                        <i class="uil uil-grid services-icon"></i>
+                        <h3 class="services-title">PRO IT <br> Hacker</h3>
+                    </div>
+                            <span class="button button-flex button-small button-link services-button"> <!---- ButtonOpen ---->
+                                View More
+                                <i class="uil uil-arrow-right button-icon"></i>
+                            </span>
+
+                        <div class="services-modal">                                     <!---- contentHidden => active-modal ---->
+                            <div class="services-modal-content">
+                                <h4 class="services-modal-title"> Ui/ Ux <br> Designer</h4>
+                                
+                                    <i class="uil uil-times-circle services-modal-close"></i>       <!---- close ---->
+
+                                    <ul class="services-modal-services grid">
+                                        <li class="services-modal-service">
+                                            <i class="uil uil-check-circle services-modal-icon"></i>
+                                            <p>Created The Earth</p>
+                                        </li>
+                                        <li class="services-modal-service">
+                                            <i class="uil uil-check-circle services-modal-icon"></i>
+                                            <p>Webpage Development</p>
+                                        </li>
+                                        <li class="services-modal-service">
+                                            <i class="uil uil-check-circle services-modal-icon"></i>
+                                            <p>Creating Content For fun</p>
+                                        </li>
+                                        <li class="services-modal-service">
+                                            <i class="uil uil-check-circle services-modal-icon"></i>
+                                            <p>Created Something</p>
+                                        </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                 <!--==================== SERVICES2 ====================-->
+                 <div class="services-content">
+                    <div>
+                        <i class="uil uil-arrow services-icon"></i>
+                        <h3 class="services-title">Frontend<br> Hacker</h3>
+                    </div>
+                            <span class="button button-flex button-small button-link services-button">
+                                View More
+                                <i class="uil uil-arrow-right button-icon"></i>
+                            </span>
+                        <div class="services-modal">
+                            <div class="services-modal-content">
+                                <h4 class="services-modal-title">Frontend <br> Developer</h4>
+                                    <i class="uil uil-times-circle services-modal-close"></i>
+
+                                    <ul class="services-modal-services grid">
+                                        <li class="services-modal-service">
+                                            <i class="uil uil-check-circle services-modal-icon"></i>
+                                            <p>Created The Earth</p>
+                                        </li>
+                                        <li class="services-modal-service">
+                                            <i class="uil uil-check-circle services-modal-icon"></i>
+                                            <p>Webpage Development</p>
+                                        </li>
+                                        <li class="services-modal-service">
+                                            <i class="uil uil-check-circle services-modal-icon"></i>
+                                            <p>Creating Content For fun</p>
+                                        </li>
+                                        <li class="services-modal-service">
+                                            <i class="uil uil-check-circle services-modal-icon"></i>
+                                            <p>Created Something</p>
+                                        </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                 <!--==================== SERVICES3 ====================-->
+                 <div class="services-content">
+                    <div>
+                        <i class="uil uil-pen services-icon"></i>
+                        <h3 class="services-title">Designer <br> Hacking</h3>
+                    </div>
+                            <span class="button button-flex button-small button-link services-button">
+                                View More
+                                <i class="uil uil-arrow-right button-icon"></i>
+                            </span>
+                        <div class="services-modal">
+                            <div class="services-modal-content">
+                                <h4 class="services-modal-title">Frontend <br> Developer</h4>
+                                    <i class="uil uil-times-circle services-modal-close"></i>
+
+                                    <ul class="services-modal-services grid">
+                                        <li class="services-modal-service">
+                                            <i class="uil uil-check-circle services-modal-icon"></i>
+                                            <p>Created The Earth</p>
+                                        </li>
+                                        <li class="services-modal-service">
+                                            <i class="uil uil-check-circle services-modal-icon"></i>
+                                            <p>Webpage Development</p>
+                                        </li>
+                                        <li class="services-modal-service">
+                                            <i class="uil uil-check-circle services-modal-icon"></i>
+                                            <p>Creating Content For fun</p>
+                                        </li>
+                                        <li class="services-modal-service">
+                                            <i class="uil uil-check-circle services-modal-icon"></i>
+                                            <p>Created Something</p>
+                                        </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PORTFOLIO ====================-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section-title">Portfolios</h2>
+                <p class="section-subtitle">Most recent work</p>
+
+                <div class="portfolio-container container mySwiper">
+                    <div class="swiper-container">
+             <!--==================== PORTFOLIO 1 ====================-->
+                        <div class="portfolio-content grid swiper-slide">
+                            <img src="img/portfolio1.jpg" alt="portfolio" class="portfolio-img">
+
+                            <div class="portfolio-data">
+                                <h3 class="portfolio-title">Modern Hacking Website</h3>
+                                <p class="portfolio-description">Wake up to reality! Nothing ever goes as planned in this world. The longer you live, the more you realize that, in this reality, only pain, suffering, and futility exist.</p>
+                                <a href="#" class="button button-flex button-small portfolio-button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+
+                        </div>
+             <!--==================== PORTFOLIO 2 ====================-->
+                        <div class="portfolio-content grid swiper-slide">
+                            <img src="img/portfolio2.jpg" alt="portfolio" class="portfolio-img">
+
+                            <div class="portfolio-data">
+                                <h3 class="portfolio-title">Brand Designing</h3>
+                                <p class="portfolio-description">Wake up to reality! Nothing ever goes as planned in this world. The longer you live, the more you realize that, in this reality, only pain, suffering, and futility exist.</p>
+                                <a href="#" class="button button-flex button-small portfolio-button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+             <!--==================== PORTFOLIO 3 ====================-->
+                        <div class="portfolio-content grid swiper-slide">
+                            <img src="img/portfolio3.jpg" alt="portfolio" class="portfolio-img">
+
+                            <div class="portfolio-data">
+                                <h3 class="portfolio-title">Ecommerce Website</h3>
+                                <p class="portfolio-description">Wake up to reality! Nothing ever goes as planned in this world. The longer you live, the more you realize that, in this reality, only pain, suffering, and futility exist.</p>
+                                <a href="#" class="button button-flex button-small portfolio-button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PROJECT IN MIND ====================-->
+            <section class="project section">
+                                <div class="project-bg">
+                    <div class="project-container container grid">
+                        <div class="project-data">
+                            <h2 class="project-title">You have a new project</h2>
+                            <p class="project-description">Contact me now and get 69% discount on your new project or I'll hack you.</p>
+                            <a href="#contact" class="button button-flex button-white">
+                                Contact Me 
+                                <i class="uil uil-message project-icon button-icon"></i>
+                            </a>
+                        </div>
+                        <img src="img/singlePerson3.png" alt="hacker" class="project-img">
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== TESTIMONIAL ====================-->
+            <section class="testimonial section">
+                <h2 class="section-title">Testimonial</h2>
+                <p class="section-subtitle">My Client Saying</p>
+
+                <div class="testimonial-container container">
+                    <div>
+                 <!--==================== TESTIMONIAL1 ====================-->
+                 <div class="testimonial-content">
+                    <div class="testimonial-data">
+                        <div class="testimonial-header">
+                            <img src="img/Testimonial1.jpg" alt="" class="testimonial-img">
+
+                            <div class="testimonial-hackers">
+                                <h3 class="testimonial-name">Jayskie Drake</h3>
+                                <span class="testimonial-client">Client Haker</span>
+                            </div>
+                        </div>
+
+                        <div class="fiveStar">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                            <i class="uil uil-star testimonial-icon"></i>
+                        </div>
+                    </div>
+
+                    <p class="testimonial-description">
+                        I was addicted to hacking, more than the intellectual challenge,the curiosity, the seductive adventure; not for stealing, or causing damage or writing computer viruses.
+                    </p>
+                 </div>
+                 <!--==================== TESTIMONIAL2 ====================-->
+                 <div class="testimonial-content">
+                    <div class="testimonial-data">
+                        <div class="testimonial-header">
+                            <img src="img/Testimonial2.jpg" alt="" class="testimonial-img">
+
+                            <div class="testimonial-hackers">
+                                <h3 class="testimonial-name">TotoyAbnoy <br> Godmode</h3>
+                                <span class="testimonial-client">God Haker</span>
+                            </div>
+                        </div>
+
+                        <div class="fiveStar">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                        </div>
+                    </div>
+
+                    <p class="testimonial-description">
+                        We are a menace in every scenario for them, yet we are living with secrets and annoymous. For us we see ourselves having our own justice for the weak, that cannot.
+                    </p>
+                 </div>
+                 <!--==================== TESTIMONIAL3 ====================-->
+                 <div class="testimonial-content">
+                    <div class="testimonial-data">
+                        <div class="testimonial-header">
+                            <img src="img/Testimonial3.jpg" alt="" class="testimonial-img">
+
+                            <div class="testimonial-hackers">
+                                <h3 class="testimonial-name">Mark <br> SuckerBurg</h3>
+                                <span class="testimonial-client">Fb Haker</span>
+                            </div>
+                        </div>
+
+                        <div class="fiveStar">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="">
+                            <i class="uil uil-star testimonial-icon"></i>
+                            <i class="uil uil-star testimonial-icon"></i>
+                        </div>
+                    </div>
+
+                    <p class="testimonial-description">
+                        The diference between a successful person and others is not lack of strenght, or knowledge, but rather in a lack of will.
+                    </p>
+                 </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact Me</h2>
+                <p class="section-subtitle">Get in touch</p>
+
+                <div class="contact-container container grid">
+                    <div>
+                        <div class="contact-information">
+                            <i class="uil uil-phone contact-icon"></i>
+
+                            <div>
+                                <h3 class="contact-title">Call Me</h3>
+                                <span class="contact-subtitle">+639505661183</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-information">
+                            <i class="uil uil-envelope-edit contact-icon"></i>
+
+                            <div>
+                                <h3 class="contact-title">Email Me</h3>
+                                <span class="contact-subtitle">Rodriguez.rowelljay@gmail.com</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-information">
+                            <i class="uil uil-map-marker contact-icon"></i>
+
+                            <div>
+                                <h3 class="contact-title">Location</h3>
+                                <span class="contact-subtitle">Purok 38 Poblacion, Malaang, Makilala</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="formColor">
+                        <form action="" class="contact-form grid">
+                            <div class="contact-inputs grid">
+                                <div class="contact-content">
+                                    <label for="" class="contact-label">Name</label>
+                                    <input type="text" class="contact-input">
+                                </div>
+                                <div class="contact-content">
+                                    <label for="" class="contact-label">Email</label>
+                                    <input type="email" class="contact-input">
+                                </div>
+                            </div>
+                            <div class="contact-content">
+                                <label for="" class="contact-label">Project</label>
+                                <input type="text" class="contact-input">
+                            </div>
+                            <div class="contact-content">
+                                <label for="" class="contact-label">Message</label>
+                                <textarea name="" id="" cols="0" rows="7" class="contact-input"></textarea>
+                            </div>
+
+                            <div>
+                                <a href="#" class="button button-flex">
+                                    Send Message
+                                    <i class="uil uil-message button-icon"></i>
+                                </a>
+                            </div>
+
+                        </form>
+                </div>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer-bg">
+                <div class="footer-container container grid">
+                    <div>
+                        <h1 class="footer-title">Dling</h1>
+                        <p class="footer-subtitle">Frontend Hacker</p>
+                    </div>
+
+                    <ul class="footer-links">
+                        <li>
+                            <a href="#services" class="footer-link">Services</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="footer-link">Portfolio</a>
+                        </li>
+                        <li id="footerId">
+                            <a href="#contact" class="footer-link">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer-socials">
+                        <a href="https://www.facebook.com/rowelljay.rodriguez" target="_blank" class="footer-social">
+                            <i class="uil uil-facebook-f"></i>
+                        </a>
+                        <a href="youparn.com" target="_blank" class="footer-social">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                        <a href="img/laugh.gif" class="footer-social">
+                            <i class="uil uil-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <p class="footer-copy">&#169; NinjaHacker | All right reserved</p>
+            </div>
+        </footer>
+        
+        <!--==================== SCROLL TOP ====================-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scroll-up-icon"></i>
+        </a>
+    </body>
+</html>
